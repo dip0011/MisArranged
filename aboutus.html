@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a437d8ded.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MisArranged | Home</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .nxt-prv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nxt-prv a{
+            padding: 12px 26px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="paper">
+        <!-- Navigation Menu  -->
+        <div class="stuck-head">
+            <a class="nav-btn" id="nav-open" href="#" menu><span>menu</span></a>
+        </div>
+        <!--fullscreen nav-->
+        <div id="menu">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Our Story</a></li>
+                    <li><a href="character.html">Character</a></li>
+                    <li><a href="allpartlist.html">All Part List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Story's Heading Starts from Here -->
+        <div class="heading">
+            <h1>MisArranged</h1>
+            <h3>A Never Heard Story</h3>
+        </div>
+        <!-- Story's Heading Ends Here -->
+
+        <div id="stories">
+            <!-- All Story Text Starts from Here -->
+            <p>
+            </p>
+            <!-- All Story Text Ends Here -->
+
+            <!-- Next and Previous Buttons  -->
+            <div class="nxt-prv">
+                <!-- <a href="#"><i class="fas fa-home"></i>&nbsp;Home</a> -->
+                <a href = "mailto: MisArranged@contact.us.com">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(".nav-btn").click(function () {
+            $("#menu").toggleClass("active");
+            $("#content").toggleClass("active");
+            $(".nav-btn").toggleClass("active");
+            $(".paper").toggleClass("active");
+        });
+    </script>
+    <!-- <script src="script.js"></script> -->
+
+</body>
+
+</html>

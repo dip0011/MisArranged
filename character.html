@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisArranged | Character</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/8a437d8ded.js" crossorigin="anonymous"></script>
+    <style>
+        @import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
+        body {
+            margin: 100px;
+            background: #c9d2d8;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .card {
+            float: left;
+            margin: 0 40px;
+            width: 340px;
+            background: #111;
+            height: 480px;
+            position: relative;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+
+        .card-image {
+            max-width: 100%;
+            transform: scale(1.3);
+            transform-origin: 0 0;
+            transition: 0.2s all ease;
+        }
+
+        .card-meta {
+            position: absolute;
+            height: 60%;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: 0.2s all ease;
+        }
+
+        .card-meta .tag,
+        .card-meta .date {
+            background: #e74c3c;
+            color: #fff;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 8px 12px;
+            position: absolute;
+            font-weight: bold;
+        }
+
+        .card-meta .tag {
+            left: 0;
+            bottom: 0;
+            font-size: 14px;
+        }
+
+        .card-meta .date {
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .card-meta .date span {
+            vertical-align: -5px;
+            line-height: 0.8;
+        }
+
+        .card-meta .date em {
+            display: block;
+            font-style: normal;
+            font-size: 70%;
+            padding-top: 2px;
+        }
+
+        .card-details {
+            background: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 60%;
+            bottom: 0;
+            padding: 20px;
+            transition: 0.2s all ease;
+        }
+
+        .card-details h2 {
+            margin: 0;
+            padding: 0 0 10px;
+            color: #333;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .card-details h3 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #e74c3c;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .card-details p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8em;
+            opacity: 0;
+            transition: 0.4s all ease;
+        }
+
+        ul {
+            list-style: none !important;
+            padding-inline-start: 10px;
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8em;
+        }
+
+        .post-meta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            color: #999;
+            padding: 24px;
+        }
+
+        .post-meta a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .post-meta span {
+            margin-right: 1em;
+        }
+
+        .timestamp {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .timestamp .strngth {
+            padding-left: 6px;
+        }
+
+        .card:hover,
+        .card.hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+        }
+
+        .card:hover .card-image,
+        .card.hover .card-image {
+            transform: scale(1.5);
+            opacity: 0.6;
+        }
+
+        .card:hover .card-meta,
+        .card.hover .card-meta {
+            height: 30%;
+        }
+
+        .card:hover .card-details,
+        .card.hover .card-details {
+            top: 30%;
+        }
+
+        .card:hover .card-details p,
+        .card.hover .card-details p {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="img/KAIRA.jpg" alt="" class="card-image" />
+        <div class="card-meta">
+            <span class="tag">Kaira</span>
+            <span class="date"><span><i class="material-icons">favorite</i><em>Ruka</em></span></span>
+        </div>
+        <div class="card-details">
+            <h2>The Goddess of Blood</h2>
+            <h3>Main Female Lead</h3>
+            <p>
+            <ul>
+                <li>KRYPTIC: LVL 1</li>
+                <li>RAKI: LVL 2</li>
+                <li>NOVA: <i class="fas fa-check-circle"></i></li>
+                <li>KRYPTIC NOVA:LVL 2</li>
+                <li>ACE OF NOVA: <i class="fas fa-dizzy"></i></li>
+            </ul>
+            </p>
+            <div class="post-meta">
+                <span class="timestamp">
+                    <i class="material-icons">label</i>
+                    <span class="strngth">Nova Vampire</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/RUDRA.jpg" alt="" class="card-image" />
+        <div class="card-meta">
+            <span class="tag">Rudra</span>
+            <span class="date"><span><i class="material-icons">favorite</i><em>Ruka</em></span></span>
+        </div>
+        <div class="card-details">
+            <h2>The God of Stupidity</h2>
+            <h3>Main Male Lead</h3>
+            <p>
+            <ul>
+                <li>KRYPTIC: LVL 4</li>
+                <li>RAKI: <i class="fas fa-dizzy"></i></li>
+                <li>NOVA: <i class="fas fa-dizzy"></i></li>
+                <li>KRYPTIC NOVA: <i class="fas fa-dizzy"></i></li>
+                <li>ACE OF NOVA: <i class="fas fa-dizzy"></i></li>
+            </ul>
+            </p>
+            <div class="post-meta">
+                <span class="timestamp">
+                    <i class="material-icons">label</i>
+                    <span class="strngth">Half Blood Vampire</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
